@@ -1,0 +1,43 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: black;
+}
+
+#header.navbar {
+    background-color: black;
+    color: white;
+    padding: 1rem 1rem 1rem 1.5rem;
+    border-bottom: solid thin white;
+}
+
+#header .navbar-brand {
+    font-family: 'Lobster';
+}
+
+.nav-item.active a,
+.navbar-brand.active {
+    cursor: default;
+}
+
+#header .nav-item:not(.active) a {
+    transition: 0.25s;
+    color: inherit;
+}
+
+#header .nav-item:not(.active) a:hover {
+    color: dodgerblue;
+}
+
+#header .social-media-icons {
+    float: right;
+    width: 2.5rem;
+    cursor: pointer;
+}
+
+#header .social-media-icons img {
+    width: 100%;
+}
+
+.container-fluid.content-body {
+    margin: 1rem;
+}
