@@ -1,43 +1,73 @@
 body {
-    font-family: 'Oswald', sans-serif;
-    background-color: black;
+  font-family: "Oswald", sans-serif;
+  background-color: black;
 }
 
 #header.navbar {
-    background-color: black;
-    color: white;
-    padding: 1rem 1rem 1rem 1.5rem;
-    border-bottom: solid thin white;
+  background-color: black;
+  color: white;
+  padding: 1rem 1rem 1rem 1.5rem;
+  border-bottom: solid thin white;
 }
 
 #header .navbar-brand {
-    font-family: 'Lobster';
+  font-family: "Lobster";
 }
 
 .nav-item.active a,
 .navbar-brand.active {
-    cursor: default;
+  cursor: default;
 }
 
 #header .nav-item:not(.active) a {
-    transition: 0.25s;
-    color: inherit;
+  transition: 0.25s;
+  color: inherit;
 }
 
 #header .nav-item:not(.active) a:hover {
-    color: dodgerblue;
+  color: dodgerblue;
 }
 
 #header .social-media-icons {
-    float: right;
-    width: 2.5rem;
-    cursor: pointer;
+  float: right;
+  width: 2.5rem;
+  cursor: pointer;
 }
 
 #header .social-media-icons img {
-    width: 100%;
+  width: 100%;
 }
 
 .container-fluid.content-body {
-    padding: 1rem;
+  padding: 1rem;
+}
+
+.card-deck {
+    width: 90%;
+    margin: auto;
+}
+
+.card-deck:not(last-of-type) {
+  margin-bottom: 1rem;
+}
+
+.card-body h5 {
+    border-bottom: solid thin #222;
+    padding-bottom: .5rem;
+}
+.tags {
+    font-size: small;
+    font-style: italic;
+    color: #5D5D5D;
+}
+
+#footer {
+    margin-top: 2rem;
+    border-top: solid thin white;
+    padding-top: .5rem;
+}
+
+#footer p {
+    color: white;
+    text-align: center;
 }
